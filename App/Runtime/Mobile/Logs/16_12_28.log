@@ -1,0 +1,4 @@
+[ 2016-12-28T13:36:52+08:00 ] 0.0.0.0 /MyCRM/mobile.php
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( user_id = 1 )' at line 1
+ [ SQL语句 ] : UPDATE `5kcrm_user` SET  WHERE ( user_id = 1 )
+

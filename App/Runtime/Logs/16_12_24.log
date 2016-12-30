@@ -1,0 +1,16 @@
+[ 2016-12-24T22:39:24+08:00 ] 0.0.0.0 /MyCRM/index.php?m=dynamic&a=index&reply=tome&department_id=1&by=&field=&search=
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND ( `module_name` = 'log' ) GROUP BY action_id' at line 1
+ [ SQL语句 ] : SELECT `log_id` FROM `5kcrm_action_log` WHERE ( `action_id` IN () ) AND ( `module_name` = 'log' ) GROUP BY action_id 
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND ( `role_id` IN ('1') ) ORDER BY create_time desc LIMIT 0,5' at line 1
+ [ SQL语句 ] : SELECT * FROM `5kcrm_action_log` WHERE ( `log_id` IN () ) AND ( `role_id` IN ('1') ) ORDER BY create_time desc LIMIT 0,5  
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND ( `role_id` IN ('1') ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `5kcrm_action_log` WHERE ( `log_id` IN () ) AND ( `role_id` IN ('1') ) LIMIT 1  
+
+[ 2016-12-24T22:39:26+08:00 ] 0.0.0.0 /MyCRM/index.php?m=dynamic&a=index&reply=toother&department_id=1&by=&field=&search=
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND ( `module_name` = 'log' ) GROUP BY action_id' at line 1
+ [ SQL语句 ] : SELECT `log_id` FROM `5kcrm_action_log` WHERE ( `action_id` IN () ) AND ( `module_name` = 'log' ) GROUP BY action_id 
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND ( `role_id` IN ('1') ) ORDER BY create_time desc LIMIT 0,5' at line 1
+ [ SQL语句 ] : SELECT * FROM `5kcrm_action_log` WHERE ( `log_id` IN () ) AND ( `role_id` IN ('1') ) ORDER BY create_time desc LIMIT 0,5  
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND ( `role_id` IN ('1') ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `5kcrm_action_log` WHERE ( `log_id` IN () ) AND ( `role_id` IN ('1') ) LIMIT 1  
+
