@@ -1,4 +1,4 @@
-  <?php
+<?php 
 	class ContactsTempViewModel extends ViewModel {
 	   public $viewFields = array(
 		'contacts'=>array('contacts_id','creator_role_id','name','post','department','sex','saltname','telephone','email','qq_no','address','zip_code','description','create_time','update_time','is_deleted','delete_role_id','delete_time','_type'=>'LEFT'),

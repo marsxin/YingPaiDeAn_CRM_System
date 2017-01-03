@@ -18,7 +18,6 @@ return array(
     'VAR_LANGUAGE' => '1',
     'COOKIE_PATH' => __ROOT__,
     'SESSION_OPTIONS'=>array('cookie_path'=>__ROOT__),
-	'TOKEN_ON'=>false,  // 是否开启令牌验证
-    'SHOW_PAGE_TRACE'=>true,//开启页面
+	'TOKEN_ON'=>false  // 是否开启令牌验证
 );
 ?>

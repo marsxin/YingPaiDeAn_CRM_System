@@ -1,0 +1,274 @@
+[ 2017-01-03T14:39:34+08:00 ] 127.0.0.1 /MyCRM/index.php?m=install&a=step4
+ERR: Duplicate entry '1' for key 'PRIMARY'
+ [ SQL语句 ] : 
+
+INSERT INTO `5kcrm_business_status` (`status_id`, `name`, `order_id`, `is_end`, `description`) VALUES
+(1, '深度沟通', 3, 0, '已经约见，并且报价'),
+(2, '初步沟通', 2, 0, '已进行初步沟通网站建设事宜，可能约见'),
+(3, '意向客户', 1, 0, '通过沟通近期有做网站的需求'),
+(5, '签订合同', 5, 0, '签订合同'),
+(6, '设计制作', 6, 0, '制作中'),
+(7, '制作完成', 7, 0, '制作完成待收款'),
+(99, '项目失败', 99, 1, '项目失败'),
+(100, '项目成功', 100, 1, '项目成功')
+ERR: Duplicate entry '1' for key 'PRIMARY'
+ [ SQL语句 ] : 
+
+INSERT INTO `5kcrm_control` (`control_id`, `module_id`, `name`, `m`, `a`, `parameter`, `description`) VALUES
+(1, 1, 'crm面板操作', 'index', 'index', '', 'CRM系统面板'),
+(2, 7, '修改个人信息', 'User', 'edit', '', '是的法士大夫地方'),
+(4, 7, '添加用户', 'User', 'add', '', ''),
+(78, 7, '删除员工', 'User', 'delete', '', ''),
+(6, 7, '添加部门', 'User', 'department_add', '', ''),
+(7, 7, '修改部门', 'User', 'department_edit', '', ''),
+(8, 7, '删除部门', 'User', 'department_delete', '', ''),
+(9, 7, '添加岗位', 'User', 'role_add', '', ''),
+(10, 7, '修改岗位', 'User', 'role_edit', '', ''),
+(11, 7, '删除岗位', 'User', 'role_delete', '', ''),
+(12, 2, '添加商机', 'Business', 'add', '', ''),
+(34, 2, '完整商机信息', 'Business', 'view', '', ''),
+(13, 2, '修改商机', 'Business', 'edit', '', ''),
+(14, 2, '删除商机', 'Business', 'delete', '', ''),
+(15, 2, '添加商机日志', 'Business', 'addLogging', '', ''),
+(16, 2, '修改商机日志', 'Business', 'eidtLogging', '', ''),
+(17, 2, '删除商机日志', 'Business', 'deleteLogging', '', ''),
+(18, 1, '用户登录', 'User', 'login', '', ''),
+(19, 1, '用户注册', 'User', 'register', '', ''),
+(20, 1, '退出', 'User', 'logout', '', ''),
+(21, 7, '查看部门信息', 'User', 'department', '', ''),
+(22, 1, '找回密码', 'User', 'lostPW', '', ''),
+(23, 1, '重置密码', 'User', 'lostpw_reset', '', ''),
+(24, 7, '查看员工信息', 'User', 'index', '', ''),
+(25, 7, '查看岗位信息', 'User', 'role', '', ''),
+(26, 7, '岗位分配', 'User', 'user_role_relation', '', ''),
+(27, 7, '员工资料修改', 'User', 'editUsers', '', ''),
+(28, 1, '查看我的日志', 'User', 'mylog', '', ''),
+(60, 6, '岗位授权', 'Permission', 'authorize', '', ''),
+(30, 7, '个人日志详情', 'User', 'mylog_view', '', ''),
+(31, 7, '删除个人日志', 'User', 'mylog_delete', '', ''),
+(32, 2, '查看商机信息', 'Business', 'index', '', ''),
+(33, 2, '查看商机日志', 'Business', 'logging', '', ''),
+(35, 3, '产品列表', 'product', 'index', '', ''),
+(36, 3, '添加产品', 'Product', 'add', '', ''),
+(37, 3, '修改产品信息', 'product', 'edit', '', ''),
+(38, 3, '删除产品', 'Product', 'delete', '', ''),
+(39, 3, '查看产品分类信息', 'Product', 'category', '', ''),
+(40, 3, '添加产品分类', 'Product', 'category_add', '', ''),
+(41, 3, '删除产品分类', 'Product', 'deleteCategory', '', ''),
+(42, 3, '修改产品分类', 'Product', 'editcategory', '', ''),
+(43, 3, '产品销量统计', 'Product', 'count', '', ''),
+(44, 5, '查看客户信息', 'Customer', 'customerView', '', ''),
+(45, 5, '添加客户', 'Customer', 'add', '', ''),
+(46, 5, '修改客户信息', 'Customer', 'edit', '', ''),
+(47, 5, '删除客户', 'Customer', 'delete', '', ''),
+(48, 5, '添加客户联系人', 'Contacts', 'add', '', ''),
+(49, 5, '查看客户联系人', 'Contacts', 'view', '', ''),
+(50, 5, '删除客户联系人', 'Contacts', 'delete', '', ''),
+(51, 5, '修改客户联系人', 'Contacts', 'edit', '', ''),
+(52, 6, '查看操作模块', 'Permission', 'module', '', ''),
+(53, 6, '修改操作模块', 'Permission', 'module_edit', '', ''),
+(54, 6, '添加操作模块信息', 'Permission', 'module_add', '', ''),
+(55, 6, '删除操作模块', 'Permission', 'module_delete', '', ''),
+(56, 6, '查看操作信息', 'Permission', 'index', '', ''),
+(57, 6, '修改操作', 'Permission', 'control_edit', '', ''),
+(58, 6, '删除模块', 'Permission', 'control_delete', '', ''),
+(59, 6, '添加操作', 'Permission', 'control_add', '', ''),
+(61, 9, 'smtp设置', 'Config', 'smtpConfig', '', ''),
+(62, 9, '删除状态', 'Config', 'deleteStatus', '', ''),
+(63, 9, '修改状态', 'Config', 'editStatus', '', ''),
+(64, 9, '添加状态', 'Config', 'addStatus', '', ''),
+(65, 9, '查看状态', 'Config', 'statusList', '', ''),
+(66, 9, '查看状态流', 'Config', 'flowList', '', ''),
+(67, 9, '添加状态流', 'Config', 'addStatusflow', '', ''),
+(68, 9, '删除状态流', 'Config', 'deleteStatusFlow', '', ''),
+(69, 9, '修改状态流信息', 'Config', 'editStatusFlow', '', '')
+ERR: Duplicate entry '2' for key 'PRIMARY'
+ [ SQL语句 ] : 
+
+INSERT INTO `5kcrm_control_module` (`module_id`, `name`, `description`) VALUES
+(2, '商机模块', '关于一切商机操作的模块'),
+(3, '产品模块', '关于产品操作的模块'),
+(5, '客户模块', '客户的管理'),
+(6, '权限模块', '用户的权限管理'),
+(7, '员工管理模块', '是的范德萨发的说法'),
+(9, '系统设置', '')
+ERR: Duplicate entry '2' for key 'PRIMARY'
+ [ SQL语句 ] : 
+
+INSERT INTO `5kcrm_log_category` (`category_id`, `name`, `order_id`, `description`) VALUES
+(2, '月报', 3, '每月工作总结'),
+(3, '周报', 2, '每周工作总结'),
+(4, '日报', 1, '每日工作总结')
+ERR: Duplicate entry '1' for key 'PRIMARY'
+ [ SQL语句 ] : 
+
+INSERT INTO `5kcrm_navigation` (`id`, `title`, `url`, `postion`, `listorder`, `module`) VALUES
+(1, '线索', '/MyCRM/index.php?m=leads', 'top', 0, 'Leads'),
+(2, '客户', '/MyCRM/index.php?m=customer', 'top', 1, 'Customer'),
+(3, '商机', '/MyCRM/index.php?m=business', 'top', 2, 'Business'),
+(4, '产品', '/MyCRM/index.php?m=product', 'top', 3, 'Product'),
+(5, '任务', '/MyCRM/index.php?m=task', 'top', 4, 'Task'),
+(6, '日程', '/MyCRM/index.php?m=event', 'top', 5, 'Event'),
+(7, '合同', '/MyCRM/index.php?m=contract', 'top', 6, 'Contract'),
+(8, '财务', '/MyCRM/index.php?m=finance', 'top', 7, 'Finance'),
+(9, '日志', '/MyCRM/index.php?m=log', 'more', 0, ''),
+(10, '知识', '/MyCRM/index.php?m=knowledge', 'more', 1, 'Knowledge'),
+(11, '营销', '/MyCRM/index.php?m=setting&a=sendsms', 'more', 2, ''),
+(12, '站内信', '/MyCRM/index.php?m=message', 'more', 3, ''),
+(13, '我的面板', '/MyCRM/', 'user', 0, ''),
+(14, '个人资料', '/MyCRM/index.php?m=user&a=edit', 'user', 1, ''),
+(15, '组织架构', '/MyCRM/index.php?m=user', 'user', 2, ''),
+(16, '权限分配', '/MyCRM/index.php?m=user&a=role', 'user', 3, 'Role'),
+(17, '公告管理', '/MyCRM/index.php?m=announcement', 'user', 4, 'announcement'),
+(18, '操作日志', '/MyCRM/index.php?m=action_log', 'user', 5, ''),
+(19, '系统设置', '/MyCRM/index.php?m=setting', 'user', 6, 'Setting')
+ERR: Duplicate entry '1' for key 'PRIMARY'
+ [ SQL语句 ] : 
+INSERT INTO `5kcrm_position` (`position_id`, `parent_id`, `name`, `department_id`, `description`) VALUES
+(1, 0, 'CEO', 1, '')
+ERR: Duplicate entry '1' for key 'PRIMARY'
+ [ SQL语句 ] : 
+
+INSERT INTO `5kcrm_product_category` (`category_id`, `parent_id`, `name`, `description`) VALUES
+(1, 0, '默认', '')
+ERR: Duplicate entry '1' for key 'PRIMARY'
+ [ SQL语句 ] : 
+
+INSERT INTO `5kcrm_role` (`role_id`, `position_id`,`user_id`) VALUES
+(1, 1, 1)
+ERR: Duplicate entry '1' for key 'PRIMARY'
+ [ SQL语句 ] : 
+
+INSERT INTO `5kcrm_role_department` (`department_id`, `parent_id`, `name`, `description`) VALUES
+(1, 0, '办公室', '公司文档管理、财务管理')
+ERR: Duplicate entry '1' for key 'PRIMARY'
+ [ SQL语句 ] : 
+
+INSERT INTO `5kcrm_user_category` (`category_id`, `name`, `description`) VALUES
+(1, '管理员', ''),
+(2, '员工', '')
+ERR: Duplicate entry '1' for key 'PRIMARY'
+ [ SQL语句 ] : 
+
+INSERT INTO `5kcrm_sms_template` (`template_id`, `subject`, `content`, `order_id`) VALUES
+(1, '默认模板', '有一个特别的日子，鲜花都为你展现；有一个特殊的日期，阳光都为你温暖；有一个美好的时刻，百灵都为你欢颜；有一个难忘的今天，亲朋都为你祝愿；那就是今天是你的生日，祝你幸福安康顺意连年！', 1)
+ERR: Can't DROP 'owner_role_id'; check that column/key exists
+ [ SQL语句 ] : 
+ALTER TABLE `5kcrm_contacts` DROP `owner_role_id`
+ERR: Duplicate column name 'total_amount'
+ [ SQL语句 ] : 
+ALTER TABLE  `5kcrm_business` ADD  `total_amount` INT( 10 ) NOT NULL COMMENT  '产品总数' AFTER  `gain_rate` ,
+ADD  `subtotal_val` FLOAT( 9, 2 ) NOT NULL COMMENT  '小计和' AFTER  `total_amount` ,
+ADD  `discount_price` FLOAT( 9, 2 ) NOT NULL COMMENT  '其他费用' AFTER  `subtotal_val` ,
+ADD  `sales_price` FLOAT( 9, 2 ) NOT NULL COMMENT  '成交价' AFTER  `discount_price` 
+ERR: Duplicate column name 'discount_rate'
+ [ SQL语句 ] : 
+ALTER TABLE  `5kcrm_r_business_product` ADD  `subtotal` FLOAT( 9, 2 ) NOT NULL COMMENT  '小计' AFTER  `amount` ,
+ADD  `discount_rate` int(3) NOT NULL COMMENT  '折扣率' AFTER  `amount` ,
+ADD  `tax_rate` int(3) NOT NULL COMMENT  '税率' AFTER  `discount_rate`,
+ADD  `unit_price` FLOAT( 9, 2 ) NOT NULL COMMENT  '单价' AFTER  `tax_rate`,
+ADD  `subtotal_val` FLOAT( 9, 2 ) NOT NULL COMMENT  '小计和',
+ADD  `discount_price` FLOAT( 9, 2 ) NOT NULL COMMENT  '其他费用'
+ERR: Duplicate column name 'last_read_time'
+ [ SQL语句 ] : 
+ALTER TABLE  `5kcrm_user` ADD  `last_read_time` VARCHAR( 500 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT  '商机等最后阅读时间'
+ERR: Unknown column 'qq' in '5kcrm_contacts'
+ [ SQL语句 ] : 	
+ALTER TABLE `5kcrm_contacts` CHANGE `qq` `qq_no` VARCHAR(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT 'qq';
+
+[ 2017-01-03T14:41:48+08:00 ] 127.0.0.1 /MyCRM/index.php?m=leads
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%s) )' at line 1
+ [ SQL语句 ] : SELECT role.user_id AS user_id,role.role_id AS role_id,role.position_id AS position_id,user.name AS user_name,user.status AS status,user.weixinid AS weixinid,user.category_id AS category_id,user.sex AS sex,user.address AS address,user.email AS email,user.img AS img,user.telephone AS telephone,user.dashboard AS dashboard,position.name AS role_name,position.parent_id AS parent_id,position.department_id AS department_id,position.description AS description,role_department.name AS department_name FROM 5kcrm_role role LEFT JOIN 5kcrm_user user ON user.user_id=role.user_id LEFT JOIN 5kcrm_position position ON position.position_id=role.position_id LEFT JOIN 5kcrm_role_department role_department ON role_department.department_id=position.department_id WHERE ( role.role_id in (%s) ) 
+
+[ 2017-01-03T17:26:38+08:00 ] 127.0.0.1 /MyCRM/index.php?m=leads
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%s) )' at line 1
+ [ SQL语句 ] : SELECT role.user_id AS user_id,role.role_id AS role_id,role.position_id AS position_id,user.name AS user_name,user.status AS status,user.weixinid AS weixinid,user.category_id AS category_id,user.sex AS sex,user.address AS address,user.email AS email,user.img AS img,user.telephone AS telephone,user.dashboard AS dashboard,position.name AS role_name,position.parent_id AS parent_id,position.department_id AS department_id,position.description AS description,role_department.name AS department_name FROM 5kcrm_role role LEFT JOIN 5kcrm_user user ON user.user_id=role.user_id LEFT JOIN 5kcrm_position position ON position.position_id=role.position_id LEFT JOIN 5kcrm_role_department role_department ON role_department.department_id=position.department_id WHERE ( role.role_id in (%s) ) 
+
+[ 2017-01-03T17:40:26+08:00 ] 127.0.0.1 /MyCRM/index.php?m=leads
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%s) )' at line 1
+ [ SQL语句 ] : SELECT role.user_id AS user_id,role.role_id AS role_id,role.position_id AS position_id,user.name AS user_name,user.status AS status,user.weixinid AS weixinid,user.category_id AS category_id,user.sex AS sex,user.address AS address,user.email AS email,user.img AS img,user.telephone AS telephone,user.dashboard AS dashboard,position.name AS role_name,position.parent_id AS parent_id,position.department_id AS department_id,position.description AS description,role_department.name AS department_name FROM 5kcrm_role role LEFT JOIN 5kcrm_user user ON user.user_id=role.user_id LEFT JOIN 5kcrm_position position ON position.position_id=role.position_id LEFT JOIN 5kcrm_role_department role_department ON role_department.department_id=position.department_id WHERE ( role.role_id in (%s) ) 
+
+[ 2017-01-03T17:40:29+08:00 ] 127.0.0.1 /MyCRM/index.php?m=leads
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%s) )' at line 1
+ [ SQL语句 ] : SELECT role.user_id AS user_id,role.role_id AS role_id,role.position_id AS position_id,user.name AS user_name,user.status AS status,user.weixinid AS weixinid,user.category_id AS category_id,user.sex AS sex,user.address AS address,user.email AS email,user.img AS img,user.telephone AS telephone,user.dashboard AS dashboard,position.name AS role_name,position.parent_id AS parent_id,position.department_id AS department_id,position.description AS description,role_department.name AS department_name FROM 5kcrm_role role LEFT JOIN 5kcrm_user user ON user.user_id=role.user_id LEFT JOIN 5kcrm_position position ON position.position_id=role.position_id LEFT JOIN 5kcrm_role_department role_department ON role_department.department_id=position.department_id WHERE ( role.role_id in (%s) ) 
+
+[ 2017-01-03T18:15:00+08:00 ] 222.66.117.14 /MyCRM/index.php?m=action_log
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%s) )' at line 1
+ [ SQL语句 ] : SELECT role.user_id AS user_id,role.role_id AS role_id,role.position_id AS position_id,user.name AS user_name,user.status AS status,user.weixinid AS weixinid,user.category_id AS category_id,user.sex AS sex,user.address AS address,user.email AS email,user.img AS img,user.telephone AS telephone,user.dashboard AS dashboard,position.name AS role_name,position.parent_id AS parent_id,position.department_id AS department_id,position.description AS description,role_department.name AS department_name FROM 5kcrm_role role LEFT JOIN 5kcrm_user user ON user.user_id=role.user_id LEFT JOIN 5kcrm_position position ON position.position_id=role.position_id LEFT JOIN 5kcrm_role_department role_department ON role_department.department_id=position.department_id WHERE ( role.role_id in (%s) ) 
+
+[ 2017-01-03T18:15:14+08:00 ] 222.66.117.14 /MyCRM/index.php?m=action_log
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%s) )' at line 1
+ [ SQL语句 ] : SELECT role.user_id AS user_id,role.role_id AS role_id,role.position_id AS position_id,user.name AS user_name,user.status AS status,user.weixinid AS weixinid,user.category_id AS category_id,user.sex AS sex,user.address AS address,user.email AS email,user.img AS img,user.telephone AS telephone,user.dashboard AS dashboard,position.name AS role_name,position.parent_id AS parent_id,position.department_id AS department_id,position.description AS description,role_department.name AS department_name FROM 5kcrm_role role LEFT JOIN 5kcrm_user user ON user.user_id=role.user_id LEFT JOIN 5kcrm_position position ON position.position_id=role.position_id LEFT JOIN 5kcrm_role_department role_department ON role_department.department_id=position.department_id WHERE ( role.role_id in (%s) ) 
+
+[ 2017-01-03T18:15:17+08:00 ] 222.66.117.14 /MyCRM/index.php?m=log
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT role.user_id AS user_id,role.role_id AS role_id,role.position_id AS position_id,user.name AS user_name,user.status AS status,user.weixinid AS weixinid,user.category_id AS category_id,user.sex AS sex,user.address AS address,user.email AS email,user.img AS img,user.telephone AS telephone,user.dashboard AS dashboard,position.name AS role_name,position.parent_id AS parent_id,position.department_id AS department_id,position.description AS description,role_department.name AS department_name FROM 5kcrm_role role LEFT JOIN 5kcrm_user user ON user.user_id=role.user_id LEFT JOIN 5kcrm_position position ON position.position_id=role.position_id LEFT JOIN 5kcrm_role_department role_department ON role_department.department_id=position.department_id WHERE ( role.role_id in () ) 
+
+[ 2017-01-03T18:15:20+08:00 ] 222.66.117.14 /MyCRM/index.php?m=knowledge
+ERR: Table '5kcrm.5kcrm_user_role' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `5kcrm_user_role`
+
+[ 2017-01-03T18:15:30+08:00 ] 222.66.117.14 /MyCRM/index.php?m=log
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT role.user_id AS user_id,role.role_id AS role_id,role.position_id AS position_id,user.name AS user_name,user.status AS status,user.weixinid AS weixinid,user.category_id AS category_id,user.sex AS sex,user.address AS address,user.email AS email,user.img AS img,user.telephone AS telephone,user.dashboard AS dashboard,position.name AS role_name,position.parent_id AS parent_id,position.department_id AS department_id,position.description AS description,role_department.name AS department_name FROM 5kcrm_role role LEFT JOIN 5kcrm_user user ON user.user_id=role.user_id LEFT JOIN 5kcrm_position position ON position.position_id=role.position_id LEFT JOIN 5kcrm_role_department role_department ON role_department.department_id=position.department_id WHERE ( role.role_id in () ) 
+
+[ 2017-01-03T18:20:58+08:00 ] 222.66.117.14 /MyCRM/index.php?m=log
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT role.user_id AS user_id,role.role_id AS role_id,role.position_id AS position_id,user.name AS user_name,user.status AS status,user.weixinid AS weixinid,user.category_id AS category_id,user.sex AS sex,user.address AS address,user.email AS email,user.img AS img,user.telephone AS telephone,user.dashboard AS dashboard,position.name AS role_name,position.parent_id AS parent_id,position.department_id AS department_id,position.description AS description,role_department.name AS department_name FROM 5kcrm_role role LEFT JOIN 5kcrm_user user ON user.user_id=role.user_id LEFT JOIN 5kcrm_position position ON position.position_id=role.position_id LEFT JOIN 5kcrm_role_department role_department ON role_department.department_id=position.department_id WHERE ( role.role_id in () ) 
+
+[ 2017-01-03T18:21:00+08:00 ] 222.66.117.14 /MyCRM/index.php?m=knowledge
+ERR: Table '5kcrm.5kcrm_user_role' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `5kcrm_user_role`
+
+[ 2017-01-03T18:21:11+08:00 ] 222.66.117.14 /MyCRM/index.php?m=business
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT role.user_id AS user_id,role.role_id AS role_id,role.position_id AS position_id,user.name AS user_name,user.status AS status,user.weixinid AS weixinid,user.category_id AS category_id,user.sex AS sex,user.address AS address,user.email AS email,user.img AS img,user.telephone AS telephone,user.dashboard AS dashboard,position.name AS role_name,position.parent_id AS parent_id,position.department_id AS department_id,position.description AS description,role_department.name AS department_name FROM 5kcrm_role role LEFT JOIN 5kcrm_user user ON user.user_id=role.user_id LEFT JOIN 5kcrm_position position ON position.position_id=role.position_id LEFT JOIN 5kcrm_role_department role_department ON role_department.department_id=position.department_id WHERE ( role.role_id in () ) 
+
+[ 2017-01-03T19:31:24+08:00 ] 222.66.117.14 /MyCRM/index.php?m=leads
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%s) )' at line 1
+ [ SQL语句 ] : SELECT role.user_id AS user_id,role.role_id AS role_id,role.position_id AS position_id,user.name AS user_name,user.status AS status,user.weixinid AS weixinid,user.category_id AS category_id,user.sex AS sex,user.address AS address,user.email AS email,user.img AS img,user.telephone AS telephone,user.dashboard AS dashboard,position.name AS role_name,position.parent_id AS parent_id,position.department_id AS department_id,position.description AS description,role_department.name AS department_name FROM 5kcrm_role role LEFT JOIN 5kcrm_user user ON user.user_id=role.user_id LEFT JOIN 5kcrm_position position ON position.position_id=role.position_id LEFT JOIN 5kcrm_role_department role_department ON role_department.department_id=position.department_id WHERE ( role.role_id in (%s) ) 
+
+[ 2017-01-03T19:31:27+08:00 ] 222.66.117.14 /MyCRM/index.php?m=business
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT role.user_id AS user_id,role.role_id AS role_id,role.position_id AS position_id,user.name AS user_name,user.status AS status,user.weixinid AS weixinid,user.category_id AS category_id,user.sex AS sex,user.address AS address,user.email AS email,user.img AS img,user.telephone AS telephone,user.dashboard AS dashboard,position.name AS role_name,position.parent_id AS parent_id,position.department_id AS department_id,position.description AS description,role_department.name AS department_name FROM 5kcrm_role role LEFT JOIN 5kcrm_user user ON user.user_id=role.user_id LEFT JOIN 5kcrm_position position ON position.position_id=role.position_id LEFT JOIN 5kcrm_role_department role_department ON role_department.department_id=position.department_id WHERE ( role.role_id in () ) 
+
+[ 2017-01-03T20:29:37+08:00 ] 0.0.0.0 /MyCRM/index.php?m=leads
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%s) )' at line 1
+ [ SQL语句 ] : SELECT role.user_id AS user_id,role.role_id AS role_id,role.position_id AS position_id,user.name AS user_name,user.status AS status,user.weixinid AS weixinid,user.category_id AS category_id,user.sex AS sex,user.address AS address,user.email AS email,user.img AS img,user.telephone AS telephone,user.dashboard AS dashboard,position.name AS role_name,position.parent_id AS parent_id,position.department_id AS department_id,position.description AS description,role_department.name AS department_name FROM 5kcrm_role role LEFT JOIN 5kcrm_user user ON user.user_id=role.user_id LEFT JOIN 5kcrm_position position ON position.position_id=role.position_id LEFT JOIN 5kcrm_role_department role_department ON role_department.department_id=position.department_id WHERE ( role.role_id in (%s) ) 
+
+[ 2017-01-03T20:29:40+08:00 ] 0.0.0.0 /MyCRM/index.php?m=business
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT role.user_id AS user_id,role.role_id AS role_id,role.position_id AS position_id,user.name AS user_name,user.status AS status,user.weixinid AS weixinid,user.category_id AS category_id,user.sex AS sex,user.address AS address,user.email AS email,user.img AS img,user.telephone AS telephone,user.dashboard AS dashboard,position.name AS role_name,position.parent_id AS parent_id,position.department_id AS department_id,position.description AS description,role_department.name AS department_name FROM 5kcrm_role role LEFT JOIN 5kcrm_user user ON user.user_id=role.user_id LEFT JOIN 5kcrm_position position ON position.position_id=role.position_id LEFT JOIN 5kcrm_role_department role_department ON role_department.department_id=position.department_id WHERE ( role.role_id in () ) 
+
+[ 2017-01-03T20:29:45+08:00 ] 0.0.0.0 /MyCRM/index.php?m=leads
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%s) )' at line 1
+ [ SQL语句 ] : SELECT role.user_id AS user_id,role.role_id AS role_id,role.position_id AS position_id,user.name AS user_name,user.status AS status,user.weixinid AS weixinid,user.category_id AS category_id,user.sex AS sex,user.address AS address,user.email AS email,user.img AS img,user.telephone AS telephone,user.dashboard AS dashboard,position.name AS role_name,position.parent_id AS parent_id,position.department_id AS department_id,position.description AS description,role_department.name AS department_name FROM 5kcrm_role role LEFT JOIN 5kcrm_user user ON user.user_id=role.user_id LEFT JOIN 5kcrm_position position ON position.position_id=role.position_id LEFT JOIN 5kcrm_role_department role_department ON role_department.department_id=position.department_id WHERE ( role.role_id in (%s) ) 
+
+[ 2017-01-03T20:29:47+08:00 ] 0.0.0.0 /MyCRM/index.php?m=leads&a=index&by=public
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%s) )' at line 1
+ [ SQL语句 ] : SELECT role.user_id AS user_id,role.role_id AS role_id,role.position_id AS position_id,user.name AS user_name,user.status AS status,user.weixinid AS weixinid,user.category_id AS category_id,user.sex AS sex,user.address AS address,user.email AS email,user.img AS img,user.telephone AS telephone,user.dashboard AS dashboard,position.name AS role_name,position.parent_id AS parent_id,position.department_id AS department_id,position.description AS description,role_department.name AS department_name FROM 5kcrm_role role LEFT JOIN 5kcrm_user user ON user.user_id=role.user_id LEFT JOIN 5kcrm_position position ON position.position_id=role.position_id LEFT JOIN 5kcrm_role_department role_department ON role_department.department_id=position.department_id WHERE ( role.role_id in (%s) ) 
+
+[ 2017-01-03T20:29:51+08:00 ] 0.0.0.0 /MyCRM/index.php?m=leads&a=index
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%s) )' at line 1
+ [ SQL语句 ] : SELECT role.user_id AS user_id,role.role_id AS role_id,role.position_id AS position_id,user.name AS user_name,user.status AS status,user.weixinid AS weixinid,user.category_id AS category_id,user.sex AS sex,user.address AS address,user.email AS email,user.img AS img,user.telephone AS telephone,user.dashboard AS dashboard,position.name AS role_name,position.parent_id AS parent_id,position.department_id AS department_id,position.description AS description,role_department.name AS department_name FROM 5kcrm_role role LEFT JOIN 5kcrm_user user ON user.user_id=role.user_id LEFT JOIN 5kcrm_position position ON position.position_id=role.position_id LEFT JOIN 5kcrm_role_department role_department ON role_department.department_id=position.department_id WHERE ( role.role_id in (%s) ) 
+
+[ 2017-01-03T20:29:52+08:00 ] 0.0.0.0 /MyCRM/index.php?m=leads&a=index&by=public
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%s) )' at line 1
+ [ SQL语句 ] : SELECT role.user_id AS user_id,role.role_id AS role_id,role.position_id AS position_id,user.name AS user_name,user.status AS status,user.weixinid AS weixinid,user.category_id AS category_id,user.sex AS sex,user.address AS address,user.email AS email,user.img AS img,user.telephone AS telephone,user.dashboard AS dashboard,position.name AS role_name,position.parent_id AS parent_id,position.department_id AS department_id,position.description AS description,role_department.name AS department_name FROM 5kcrm_role role LEFT JOIN 5kcrm_user user ON user.user_id=role.user_id LEFT JOIN 5kcrm_position position ON position.position_id=role.position_id LEFT JOIN 5kcrm_role_department role_department ON role_department.department_id=position.department_id WHERE ( role.role_id in (%s) ) 
+
+[ 2017-01-03T20:50:37+08:00 ] 0.0.0.0 /MyCRM/index.php?m=leads
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%s) )' at line 1
+ [ SQL语句 ] : SELECT role.user_id AS user_id,role.role_id AS role_id,role.position_id AS position_id,user.name AS user_name,user.status AS status,user.weixinid AS weixinid,user.category_id AS category_id,user.sex AS sex,user.address AS address,user.email AS email,user.img AS img,user.telephone AS telephone,user.dashboard AS dashboard,position.name AS role_name,position.parent_id AS parent_id,position.department_id AS department_id,position.description AS description,role_department.name AS department_name FROM 5kcrm_role role LEFT JOIN 5kcrm_user user ON user.user_id=role.user_id LEFT JOIN 5kcrm_position position ON position.position_id=role.position_id LEFT JOIN 5kcrm_role_department role_department ON role_department.department_id=position.department_id WHERE ( role.role_id in (%s) ) 
+
+[ 2017-01-03T20:50:38+08:00 ] 0.0.0.0 /MyCRM/index.php?m=leads
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%s) )' at line 1
+ [ SQL语句 ] : SELECT role.user_id AS user_id,role.role_id AS role_id,role.position_id AS position_id,user.name AS user_name,user.status AS status,user.weixinid AS weixinid,user.category_id AS category_id,user.sex AS sex,user.address AS address,user.email AS email,user.img AS img,user.telephone AS telephone,user.dashboard AS dashboard,position.name AS role_name,position.parent_id AS parent_id,position.department_id AS department_id,position.description AS description,role_department.name AS department_name FROM 5kcrm_role role LEFT JOIN 5kcrm_user user ON user.user_id=role.user_id LEFT JOIN 5kcrm_position position ON position.position_id=role.position_id LEFT JOIN 5kcrm_role_department role_department ON role_department.department_id=position.department_id WHERE ( role.role_id in (%s) ) 
+
+[ 2017-01-03T21:59:04+08:00 ] 0.0.0.0 /MyCRM/index.php?m=leads
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%s) )' at line 1
+ [ SQL语句 ] : SELECT role.user_id AS user_id,role.role_id AS role_id,role.position_id AS position_id,user.name AS user_name,user.status AS status,user.weixinid AS weixinid,user.category_id AS category_id,user.sex AS sex,user.address AS address,user.email AS email,user.img AS img,user.telephone AS telephone,user.dashboard AS dashboard,position.name AS role_name,position.parent_id AS parent_id,position.department_id AS department_id,position.description AS description,role_department.name AS department_name FROM 5kcrm_role role LEFT JOIN 5kcrm_user user ON user.user_id=role.user_id LEFT JOIN 5kcrm_position position ON position.position_id=role.position_id LEFT JOIN 5kcrm_role_department role_department ON role_department.department_id=position.department_id WHERE ( role.role_id in (%s) ) 
+
+[ 2017-01-03T21:59:07+08:00 ] 0.0.0.0 /MyCRM/index.php?m=business
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT role.user_id AS user_id,role.role_id AS role_id,role.position_id AS position_id,user.name AS user_name,user.status AS status,user.weixinid AS weixinid,user.category_id AS category_id,user.sex AS sex,user.address AS address,user.email AS email,user.img AS img,user.telephone AS telephone,user.dashboard AS dashboard,position.name AS role_name,position.parent_id AS parent_id,position.department_id AS department_id,position.description AS description,role_department.name AS department_name FROM 5kcrm_role role LEFT JOIN 5kcrm_user user ON user.user_id=role.user_id LEFT JOIN 5kcrm_position position ON position.position_id=role.position_id LEFT JOIN 5kcrm_role_department role_department ON role_department.department_id=position.department_id WHERE ( role.role_id in () ) 
+
