@@ -1,0 +1,8 @@
+[ 2017-01-08T10:52:01+08:00 ] 101.90.254.195 /MyCRM/index.php?m=customer&a=analytics
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND ( `owner_role_id` = 1 ) AND ( `create_time` <= 1483891199 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `5kcrm_customer` WHERE ( `is_deleted` = 0 ) AND ( `customer_id` IN () ) AND ( `owner_role_id` = 1 ) AND ( `create_time` <= 1483891199 ) LIMIT 1  
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND ( `owner_role_id` = 2 ) AND ( `create_time` <= 1483891199 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `5kcrm_customer` WHERE ( `is_deleted` = 0 ) AND ( `customer_id` IN () ) AND ( `owner_role_id` = 2 ) AND ( `create_time` <= 1483891199 ) LIMIT 1  
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND ( `owner_role_id` = 3 ) AND ( `create_time` <= 1483891199 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `5kcrm_customer` WHERE ( `is_deleted` = 0 ) AND ( `customer_id` IN () ) AND ( `owner_role_id` = 3 ) AND ( `create_time` <= 1483891199 ) LIMIT 1  
+
